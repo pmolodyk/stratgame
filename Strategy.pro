@@ -24,8 +24,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        gameplay.cpp
+        gameplay.cpp \
+    gamefield.cpp
 
-HEADERS  += gameplay.h
+HEADERS  += gameplay.h \
+    gamefield.h
 
 FORMS    += gameplay.ui
