@@ -2,13 +2,11 @@
 #include "ui_gameplay.h"
 
 Gameplay::Gameplay(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::Gameplay)
+    QMainWindow(parent)
 {
-    ui->setupUi(this);
+
 }
 
 Gameplay::~Gameplay()
 {
-    delete ui;
 }

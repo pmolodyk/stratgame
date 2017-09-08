@@ -3,9 +3,7 @@
 
 #include <QMainWindow>
 
-namespace Ui {
 class Gameplay;
-}
 
 class Gameplay : public QMainWindow
 {
@@ -16,7 +14,7 @@ public:
     ~Gameplay();
 
 private:
-    Ui::Gameplay *ui;
+
 };
 
 #endif // GAMEPLAY_H
