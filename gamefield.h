@@ -3,11 +3,17 @@
 
 #include <QObject>
 #include <QWidget>
+#include <QPainter>
+#include <QRect>
+#include <QSize>
+#include <QPoint>
 
 class GameField
 {
-public:
-    GameField();
+    public:
+        GameField();
+    private:
+        QRect* area;
 };
 
 #endif // GAMEFIELD_H

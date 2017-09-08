@@ -2,6 +2,7 @@
 #define GAMEPLAY_H
 
 #include <QMainWindow>
+#include <gamefield.h>
 
 class Gameplay;
 
@@ -14,6 +15,7 @@ public:
     ~Gameplay();
 
 private:
+    GameField* field;
 
 };
 

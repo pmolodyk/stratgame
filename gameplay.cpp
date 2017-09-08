@@ -4,7 +4,7 @@
 Gameplay::Gameplay(QWidget *parent) :
     QMainWindow(parent)
 {
-
+    field = new GameField();
 }
 
 Gameplay::~Gameplay()
