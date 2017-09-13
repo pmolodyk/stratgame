@@ -7,13 +7,16 @@
 #include <QRect>
 #include <QSize>
 #include <QPoint>
+#include <QPaintEvent>
 
-class GameField
+class GameField : public QWidget
 {
+    Q_OBJECT
     public:
         GameField();
     private:
         QRect* area;
+        void paintEvent(QPaintEvent *event);
 };
 
 #endif // GAMEFIELD_H
