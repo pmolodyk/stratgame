@@ -2,8 +2,8 @@
 
 GameField::GameField()
 {
-    area = new QRect(0, 0, 1220, 720);
-    resize(1220, 720);
+    area = new QRect(0, 0, 1500, 720);
+    resize(1500, 720);
     latticeInit();
     show();
     //paintEvent(new QPaintEvent(*(area)));
