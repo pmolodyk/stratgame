@@ -24,9 +24,9 @@ void GameField::paintEvent(QPaintEvent *event)
 {
     QPainter* painter = new QPainter(this);
     painter->setPen(Qt::black);
-    painter->setBrush(QColor(100, 100, 100));
+    painter->setBrush(QColor(170, 170, 170));
     painter->drawRect(*area);
-    painter->setBrush(Qt::blue);
+    painter->setBrush(QColor(200, 70, 0));
     for (int i = 0; i <= 1200; i += 50)
     {
         for (int j = 0; j <= 700; j += 50)
