@@ -14,4 +14,5 @@ void GameField::paintEvent(QPaintEvent *event)
     painter->setPen(Qt::black);
     painter->setBrush(Qt::yellow);
     painter->drawRect(*area);
+    painter->end();
 }
