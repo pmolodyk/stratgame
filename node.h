@@ -20,10 +20,15 @@ public:
     {
         return y;
     }
+    void setstate(int s)
+    {
+        state = s;
+    }
 
 private:
     int x;
     int y;
+    int state;
 signals:
 
 public slots:

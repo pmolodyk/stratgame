@@ -17,6 +17,14 @@ void GameField::latticeInit(void)
         for (int j = 0; j <= 14; j++)
         {
             lattice[i].push_back(new node(0, i * 50, j * 50));
+            if (i == 0)
+            {
+                lattice[i][j]->setstate(1);
+            }
+            else if (i == 24)
+            {
+                lattice[i][j]->setstate(2);
+            }
         }
     }
 }
