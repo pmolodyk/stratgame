@@ -12,6 +12,15 @@ public:
     explicit node(QObject *parent = 0, int X = 0, int Y = 0);
     void paintEvent(QPaintEvent *event);
     void draw(QPainter* painter);
+    int getx()
+    {
+        return x;
+    }
+    int gety()
+    {
+        return y;
+    }
+
 private:
     int x;
     int y;
