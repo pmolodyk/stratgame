@@ -8,5 +8,5 @@ node::node(QObject *parent, int X, int Y) : QObject(parent)
 
 void node::draw(QPainter *painter)
 {
-    painter->drawEllipse(QPoint(x, y), 2, 2);
+    painter->drawEllipse(x, y, 10, 10);
 }
