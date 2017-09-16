@@ -16,7 +16,7 @@ public:
 
 private:
     GameField* field;
-
+    int move;
 };
 
 #endif // GAMEPLAY_H
