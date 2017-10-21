@@ -8,17 +8,14 @@
 #include <QSize>
 #include <QPoint>
 #include <QPaintEvent>
-<<<<<<< HEAD
-=======
 #include <vector>
 #include <node.h>
->>>>>>> petr
 
 class GameField : public QWidget
 {
     Q_OBJECT
     public:
-        GameField();
+           GameField();
         void latticeInit(void);
     private:
         std::vector<std::vector<node*>> lattice;

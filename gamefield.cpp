@@ -1,18 +1,15 @@
 #include "gamefield.h"
 
+#include <QPainter>
+#include <QTimer>
 GameField::GameField()
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
     area = new QRect(0, 0, 1000, 500);
     paintEvent(new QPaintEvent(*(area)));
-=======
     area = new QRect(0, 0, 1220, 720);
     resize(1220, 720);
-=======
     area = new QRect(0, 0, 1500, 720);
     resize(1500, 720);
->>>>>>> petr
     latticeInit();
     show();
     //paintEvent(new QPaintEvent(*(area)));
@@ -36,27 +33,12 @@ void GameField::latticeInit(void)
             }
         }
     }
->>>>>>> petr
 }
 
 void GameField::paintEvent(QPaintEvent *event)
 {
-    QPainter* painter = new QPainter(this);
-<<<<<<< HEAD
-    painter->begin(this);
-    painter->drawRect(*area);
-=======
-    painter->setPen(Qt::black);
-    painter->setBrush(QColor(170, 170, 170));
-    painter->drawRect(*area);
-    painter->setBrush(QColor(200, 70, 0));
-    for (int i = 0; i <= 24; i++)
-    {
-        for (int j = 0; j <= 14; j++)
-        {
-            lattice[i][j]->draw(painter);
-        }
-    }
->>>>>>> petr
-    painter->end();
+    QPainter painter;
+    painter.begin(this);
+
+    painter.end();
 }
