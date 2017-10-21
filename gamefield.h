@@ -18,6 +18,8 @@ class GameField : public QWidget
            GameField();
         void latticeInit(void);
     private:
+        int x = 1300;
+        int y = 700;
         std::vector<std::vector<node*>> lattice;
         QRect* area;
         void paintEvent(QPaintEvent *event);
