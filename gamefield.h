@@ -9,20 +9,25 @@
 #include <QPoint>
 #include <QPaintEvent>
 #include <vector>
+#include <set>
 #include <node.h>
+#include <road.h>
 
 class GameField : public QWidget
 {
     Q_OBJECT
     public:
-           GameField();
+        GameField(QWidget * parent, int X, int Y);
         void latticeInit(void);
-    private:
-        int x = 1300;
-        int y = 700;
         std::vector<std::vector<node*>> lattice;
+    private:
+        int x;
+        int y;
+        int l = 25;
+        int h = 20;
         QRect* area;
-        void paintEvent(QPaintEvent *event);
+        void paintEvent(QPaintEvent*);
+        std::set<road*> roads;
 };
 
 #endif // GAMEFIELD_H

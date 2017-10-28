@@ -26,10 +26,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         gameplay.cpp \
     gamefield.cpp \
-    node.cpp
+    node.cpp \
+    road.cpp \
+    menu.cpp \
+    player.cpp \
+    statusbar.cpp
 
 HEADERS  += gameplay.h \
     gamefield.h \
-    node.h
+    node.h \
+    road.h \
+    menu.h \
+    player.h \
+    statusbar.h
 
 FORMS    += gameplay.ui

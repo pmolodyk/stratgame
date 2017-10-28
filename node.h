@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QPaintEvent>
 #include <QPainter>
+#include <vector>
 
 class node : public QObject
 {
@@ -24,11 +25,15 @@ public:
     {
         state = s;
     }
-
+    int getstate(void)
+    {
+        return state;
+    }
 private:
     int x;
     int y;
     int state;
+    std::vector<node*> a;
 signals:
 
 public slots:
